@@ -214,7 +214,7 @@ RCT_EXPORT_METHOD(remove:(NSString *)key
     }
 }
 
-CFStringRef accessibleValue(NSDictionary *options)
+static CFStringRef accessibleValue(NSDictionary *options)
 {
     if (options && options[@"accessible"] != nil) {
         NSDictionary *keyMap = @{
